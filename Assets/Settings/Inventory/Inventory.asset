@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfa3ff5b3703b64298a7b633b0a3bac, type: 3}
   m_Name: Inventory
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Systems.GameEvents.Inventory.GameEventInventory
+  LoggingEnabled: 1
+  ActiveQuests: []
+  CompletedQuests: []
   Item: []
   Quantity: 
   RefreshInventory: {fileID: 11400000, guid: 578f97da5bbfe4145b33e2d8d344357f, type: 2}

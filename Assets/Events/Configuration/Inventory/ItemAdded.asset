@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: ItemAdded
   m_EditorClassIdentifier: 
   LoggingEnabled: 0
-  Clips: []
+  Clips:
+  - {fileID: 0}
   AudioHandler: {fileID: 11400000, guid: c65e264881e6b314ca9b9357d4a7fd5c, type: 2}

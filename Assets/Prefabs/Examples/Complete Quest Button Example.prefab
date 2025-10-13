@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6636931719345137617
+--- !u!1 &413336916502493283
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,57 +8,57 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1500651509650832437}
-  - component: {fileID: 6920401483742543812}
-  - component: {fileID: 4775789567804902054}
-  - component: {fileID: 3935952360565139353}
+  - component: {fileID: 4324575969960254802}
+  - component: {fileID: 8884573799535450982}
+  - component: {fileID: 8501335686102175075}
+  - component: {fileID: 3452969368487919976}
   m_Layer: 5
-  m_Name: Add Item Button
+  m_Name: Complete Quest Button Example
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1500651509650832437
+--- !u!224 &4324575969960254802
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6636931719345137617}
+  m_GameObject: {fileID: 413336916502493283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 702307287499850432}
+  - {fileID: 3609213537944591356}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 47.173767, y: -8.255402}
-  m_SizeDelta: {x: 254.3475, y: 46.5108}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 250, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &6920401483742543812
+--- !u!222 &8884573799535450982
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6636931719345137617}
+  m_GameObject: {fileID: 413336916502493283}
   m_CullTransparentMesh: 1
---- !u!114 &4775789567804902054
+--- !u!114 &8501335686102175075
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6636931719345137617}
+  m_GameObject: {fileID: 413336916502493283}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -77,18 +77,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3935952360565139353
+--- !u!114 &3452969368487919976
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6636931719345137617}
+  m_GameObject: {fileID: 413336916502493283}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
     m_Mode: 3
     m_WrapAround: 0
@@ -117,14 +117,14 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 4775789567804902054}
+  m_TargetGraphic: {fileID: 8501335686102175075}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 5b31deadb29962e49bb803425f56581e, type: 2}
-        m_TargetAssemblyTypeName: Assets.Scripts.Systems.Inventory.InventoryItem,
+      - m_Target: {fileID: 11400000, guid: c5cd591f4d263074f94a3f23c39d0f70, type: 2}
+        m_TargetAssemblyTypeName: Assets.Scripts.Systems.Inventory.InventoryQuest,
           Assembly-CSharp
-        m_MethodName: AddToInventory
+        m_MethodName: CompleteQuest
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -134,7 +134,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &8862892366262056549
+--- !u!1 &3900188592118661294
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,9 +142,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 702307287499850432}
-  - component: {fileID: 5362318572102090338}
-  - component: {fileID: 8041041211354895760}
+  - component: {fileID: 3609213537944591356}
+  - component: {fileID: 3145023777595321692}
+  - component: {fileID: 8623770708732056822}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -152,45 +152,45 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &702307287499850432
+--- !u!224 &3609213537944591356
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8862892366262056549}
+  m_GameObject: {fileID: 3900188592118661294}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1500651509650832437}
+  m_Father: {fileID: 4324575969960254802}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &5362318572102090338
+--- !u!222 &3145023777595321692
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8862892366262056549}
+  m_GameObject: {fileID: 3900188592118661294}
   m_CullTransparentMesh: 1
---- !u!114 &8041041211354895760
+--- !u!114 &8623770708732056822
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8862892366262056549}
+  m_GameObject: {fileID: 3900188592118661294}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -199,9 +199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Add Item
-
-'
+  m_text: Complete Quest "Pegar Cachorrinho"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -232,8 +230,8 @@ MonoBehaviour:
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0
-  m_fontSizeMax: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -244,13 +242,13 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 0
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
-  m_ActiveFontFeatures: 
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1

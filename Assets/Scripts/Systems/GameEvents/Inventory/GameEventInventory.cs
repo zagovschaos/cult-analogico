@@ -10,6 +10,8 @@ namespace Assets.Scripts.Systems.GameEvents.Inventory
         public GameEvent RefreshInventory;
         public GameEvent ItemAdded;
         public GameEvent ItemRemoved;
+        public GameEvent QuestAdded;
+        public GameEvent QuestCompleted;
 
         public override void AddItem(InventoryItem inventoryItem)
         {
@@ -23,6 +25,18 @@ namespace Assets.Scripts.Systems.GameEvents.Inventory
             base.RemoveItem(inventoryItem);
             RefreshInventory.Broadcast();
             ItemRemoved.Broadcast(inventoryItem);
+        }
+
+        public override void AddQuest(InventoryQuest quest)
+        {
+            base.AddQuest(quest);
+            QuestAdded.Broadcast(quest);
+        }
+
+        public override void CompleteQuest(InventoryQuest quest)
+        {
+            base.CompleteQuest(quest);
+            QuestCompleted.Broadcast(quest);
         }
     }
 }
