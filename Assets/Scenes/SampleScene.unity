@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!224 &461145603 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+  m_PrefabInstance: {fileID: 1566489390}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,7 +391,9 @@ RectTransform:
   - {fileID: 720709267}
   - {fileID: 1850985620}
   - {fileID: 1933582100}
+  - {fileID: 461145603}
   - {fileID: 2068600243}
+  - {fileID: 1293570792}
   m_Father: {fileID: 1155951310}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -597,6 +604,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1500651509650832437, guid: 972e31ce20ad05c409f48f2ac14043f5, type: 3}
   m_PrefabInstance: {fileID: 2424623003999038396}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &1293570792 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+  m_PrefabInstance: {fileID: 1500833897}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1308989156
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,8 +695,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -735,6 +747,216 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308989156}
   m_CullTransparentMesh: 1
+--- !u!1001 &1500833897
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 727993654}
+    m_Modifications:
+    - target: {fileID: 413336916502493283, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_Name
+      value: Complete Quest Button Example 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3452969368487919976, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 395ad81e87b214b449123c5535121856, type: 2}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324575969960254802, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8623770708732056822, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+      propertyPath: m_text
+      value: Complete Quest "Pegar Cachorrinho 2"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6d662cdd695208440bec4048ab5085d6, type: 3}
+--- !u!1001 &1566489390
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 727993654}
+    m_Modifications:
+    - target: {fileID: 167167518082810262, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 395ad81e87b214b449123c5535121856, type: 2}
+    - target: {fileID: 492777401728072190, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_Name
+      value: 'Activate Quest With Dependency Button Example '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062826302645305825, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_text
+      value: Ativar Quest "Pegar Cachorrinho 2"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611891164790766965, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd13e405cfa970d4781fa5b22babbc74, type: 3}
 --- !u!1 &1842879735
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,8 +1122,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
