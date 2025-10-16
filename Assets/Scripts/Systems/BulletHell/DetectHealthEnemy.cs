@@ -15,40 +15,30 @@ public class DetectHealthEnemy : MonoBehaviour
     [Tooltip("Quantidade de cura")]
     [SerializeField] private float heal;
 
-    [SerializeField] private bool destroyOnCollide = true;
-
-   
-
-    private void Start()
-    {
-        //teste de mudanças de dano
-        //damage = PowerUpController.Instance.m_player.BulletDamage;
-
-
-    }
-
+ 
 
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (type != DetectionType.Collision)
+       if (type != DetectionType.Collision)
             return;
 
-        if (collision.gameObject.TryGetComponent(out IDamageable damageable))
+        if (collision.gameObject.TryGetComponent(out IDamageable damageable) || collision.gameObject.CompareTag("Enemy"))
         {
-            damageable.TakeDamage(transform.position, damage);
-            damageable.Heal(heal);
+            //damageable.TakeDamage(transform.position, damage);
+            //damageable.Heal(heal);
+            DestroyObject();
         }
 
-        DestroyObject();
+     
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (type != DetectionType.Trigger || collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Bullet"))
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Bullet"))
             return;
 
-        if (collision.gameObject.TryGetComponent(out IDamageable damageable) &&  collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.TryGetComponent(out IDamageable damageable) || collision.gameObject.CompareTag("Enemy"))
         {
             damageable.TakeDamage(transform.position, damage);
             damageable.Heal(heal);
@@ -65,9 +55,6 @@ public class DetectHealthEnemy : MonoBehaviour
 
     private void DestroyObject()
     {
-        if (!destroyOnCollide)
-            return;
-
-         Destroy(gameObject);
+       Destroy(gameObject);
     }
 }

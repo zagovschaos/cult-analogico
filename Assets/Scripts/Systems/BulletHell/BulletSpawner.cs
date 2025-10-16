@@ -7,7 +7,7 @@ public class BulletSpawner : MonoBehaviour
 {
     enum SpawnerType { Straight, Spin, Everywhere }
 
-    [SerializeField] GameObject Target;
+    private Transform Target;
 
     [Header("Bullet Attributes")]
     public GameObject bullet;
@@ -25,9 +25,19 @@ public class BulletSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+       FindTarget();
+             
     }
 
+    private void FindTarget()
+    {
+        GameObject target = GameObject.FindGameObjectWithTag("Player");
+        if (target != null)
+        {
+            Target = target.transform;
+        }
+        
+    }
 
     // Update is called once per frame
     void Update()
