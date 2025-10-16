@@ -158,6 +158,10 @@ MonoBehaviour:
   isLookingLeft: 0
   damage: 1
   timeToAttack: 0.5
+  xpOrbPrefab: {fileID: 6643603202692804452, guid: aef602dd1cd6ed040b37240a64752440, type: 3}
+  minXP: 1
+  maxXP: 3
+  xpOrbCount: 1
 --- !u!1001 &6172351908621223187
 PrefabInstance:
   m_ObjectHideFlags: 0

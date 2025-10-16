@@ -35,6 +35,8 @@ public class PlayerController : MonoBehaviour, IDamageable
     private Vector2 movement;
     private bool isLookingLeft = false;
 
+    [SerializeField] private Text lifeText;
+
     // Add this method to initialize the Singleton
     private void Awake()
     {
@@ -83,6 +85,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     public void SetlifeBar(float currrentHealth, float maxHealth)
     {
         lifeBar.fillAmount = currrentHealth / maxHealth;
+        lifeText.text = currrentHealth.ToString();
     }
 
     public void TakeDamage(Vector3 direction, float damage)

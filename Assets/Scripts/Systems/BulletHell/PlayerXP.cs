@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
+using UnityEngine.UI;
 
 public class PlayerXP : MonoBehaviour
 {
@@ -11,8 +12,8 @@ public class PlayerXP : MonoBehaviour
     [SerializeField] private float xpMultiplier = 1.2f; // XP required multiplier per level
 
     [Header("UI References")]
-    [SerializeField] private TextMeshProUGUI xpText;
-    [SerializeField] private UnityEngine.UI.Slider xpSlider;
+    [SerializeField] private Image xpFillImage; // Image component with Image Type = Filled
+    [SerializeField] private Text levelText; // Optional: if you want to show level text separatel
 
     [Header("Events")]
     public UnityEvent<int> OnXPAdded; // Parameter: XP amount
@@ -60,15 +61,16 @@ public class PlayerXP : MonoBehaviour
 
     private void UpdateUI()
     {
-        if (xpText != null)
+        // Update XP fill amount (0 to 1)
+        if (xpFillImage != null)
         {
-            xpText.text = $"Lvl {currentLevel} - {currentXP}/{xpToNextLevel} XP";
+            xpFillImage.fillAmount = (float)currentXP / xpToNextLevel;
         }
 
-        if (xpSlider != null)
+        // Update level text if assigned
+        if (levelText != null)
         {
-            xpSlider.maxValue = xpToNextLevel;
-            xpSlider.value = currentXP;
+            levelText.text = currentLevel.ToString();
         }
     }
 
@@ -85,4 +87,9 @@ public class PlayerXP : MonoBehaviour
     public int GetCurrentLevel() => currentLevel;
     public int GetCurrentXP() => currentXP;
     public int GetXPToNextLevel() => xpToNextLevel;
+
+    public float GetXPFillPercentage()
+    {
+        return (float)currentXP / xpToNextLevel;
+    }
 }
